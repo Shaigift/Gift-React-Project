@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import Products from './Products';
-
+import { Button } from 'react-bootstrap';
+import Rating from './Rating';
 class App extends Component {
-  render() {   
-    const products = ["Learning React","Pro React","Beginning React"];
-    const listProducts = products.map((product) =>
-        <li key={product.toString()}>{product}</li>
-    );     
+  render() {        
     return (
       <div>
-          <ul>{listProducts}</ul>
+        <Rating rating="1"/>
+        <Rating rating="2"/>
+        <Rating rating="3"/>
+        <Rating rating="4"/>
+        <Rating rating="5"/>
       </div>
     );
   }
