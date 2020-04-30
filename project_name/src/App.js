@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Products from './Products';
-import JumboTronComponent from './JumboTronComponent';
+import GitHub from './GitHub';
 
-class App extends Component {
+class App extends Component { 
+      
   render() {        
     return (
       <div>
-          <JumboTronComponent />      
+        <GitHub />                        
       </div>
     );
   }
